@@ -16,7 +16,7 @@ Using the [steps in the SageMaker documentation](https://docs.aws.amazon.com/sag
 1. Use an **Instance Type** of `ml.t3.large`
 1. Have the notebook clone this Git repository.  Under **Git Repositories**, from the **Repository** drop down, select *Clone a git repository to this notebook only*.
 1. Enter this Git repository url: `https://github.com/jpbarto/sagemaker-tensorflow-workshop.git`
-1. After the notebook enters a state of `InService` you can access it using the `Open JupyterLab` link.
+1. After approximately 5 minutes the notebook will enter a state of `InService`, you can then access it using the `Open JupyterLab` link.
 
 ## Labs
 
@@ -39,7 +39,7 @@ Using the linked Jupyter notebook above you will perform the following tasks:
 
 ### Lab 3: [Airflow Automation](https://amazon-mwaa-for-analytics.workshop.aws/en/workshop.html)
 
-With the guidance of the linked lab materials above you will build an ML workflor with Apache Airflow and Amazon SageMaker.
+With the guidance of the linked lab materials below you will build an ML workflow with Apache Airflow and Amazon SageMaker.
 
 1. Begin by [populating an Amazon S3 bucket](https://amazon-mwaa-for-analytics.workshop.aws/en/workshop/setup/s3.html) with data to be used by Apache Airflow.  
     > Note that the Amazon S3 Bucket has already been created for you.
@@ -56,8 +56,6 @@ With the guidance of the linked lab materials above you will build an ML workflo
 
 1. This will take up to 10 minutes to modify and reload the environment.  You can monitor the status of the environment using the [AWS console](https://console.aws.amazon.com/mwaa/home?#environments)
 
-1. While the environment is updating follow the [IAM guide](https://amazon-mwaa-for-analytics.workshop.aws/en/workshop/setup/iam.html) to create the IAM roles required for this lab.  
-
 1. While the environment is updating create an IAM role for use by Amazon SageMaker.  Start by visiting the [AWS IAM console](https://console.aws.amazon.com/iam/home?#/roles).
 
 1. Click **Create Role**
@@ -72,4 +70,4 @@ With the guidance of the linked lab materials above you will build an ML workflo
 
 1. For Role name, enter `AirflowSageMakerExecutionRole` and choose **Create Role**
 
-1. The prerequisites are now complete.  Please use your Cloud9 IDE or local workstation to now complete the creation of an [Apache Airflow DAG](https://amazon-mwaa-for-analytics.workshop.aws/en/workshop/m3-ml-sagemaker.html).
+1. The prerequisites are now complete.  Please use your [Cloud9 IDE](https://console.aws.amazon.com/cloud9/home) or local workstation to now complete the creation of an [Apache Airflow DAG](https://amazon-mwaa-for-analytics.workshop.aws/en/workshop/m3-ml-sagemaker.html).
